@@ -1,22 +1,16 @@
 package test
 
 object Problem9 extends App {
-  //35541072
-  var a = 1;
-  var b = 2;
-  var fin = true;
-  while (fin) {
-    while (a < b) {
-      var c2 = Math.pow(a, 2.0) + Math.pow(b, 2.0);
-      var c = Math.sqrt(c2).toInt;
-      if (a + b + c == 1000) {
-        var prod = a * b * c;
-        println(prod);
-        fin = false;
+  //31875000
+  var prod = 0;
+  for (b <- 1 to 999) {
+    for (a <- b to 1 by -1) {
+      var c = 1000 - a - b;
+      if (math.pow(c.toDouble, 2.0) == math.pow(a.toDouble, 2.0) + math.pow(b.toDouble, 2.0)) {
+        prod = a * b * c;
       }
-      a = a + 1;
     }
-    b = b + 1;
-    a = 1;
   }
+  println(prod);
+
 }
