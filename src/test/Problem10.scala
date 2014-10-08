@@ -1,8 +1,8 @@
 package test
 
 object Problem10 extends App {
-  //1179908152
-  var sum = 0;
+  //1179908154
+  var sum = 2;
   for (i <- 3 to 2000000 by 2) {
       if (isPrime(i)) {
         sum = sum +i;
