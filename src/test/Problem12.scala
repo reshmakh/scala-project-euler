@@ -7,11 +7,11 @@ object Problem12 {
  var over = false;
  while (!over) {
    triangle = triangle + count;
-   count = count+1;
    if (numDivisors(triangle) >= 500) {
      println(triangle);
      over = true;
    }
+   count = count+1;
  }
  println(triangle);
 }
