@@ -1,6 +1,7 @@
 package test
 
 object Problem12 {
+  //76576500
   def main(args:Array[String]) {
  var triangle = 0;
  var count = 1;
